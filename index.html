@@ -1,38 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <title>YUNHA (DANIEL) JANG</title>
-  </head>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
+        
+        <script type="text/javascript">
+            angular.module('myApp', ['ngMaterial']);
+        </script>
+        <style type="text/css">
+            html, body {
+                height: 100%;
+                background-color: #000044;
+            }
+            .container, md-content {
+                color: #888888;
+                background-color: #000044;
+            }
+            md-card {
+                border: 2px solid #000044;
+            }
+            img {
+                width: 100%;
+            }
+            .md-headline {
+                color: #000044;
+            }
+        </style>
+        <title>YUNHA (DANIEL) JANG</title>
+    </head>
 
-  <body>
-    <div class="container">
-      <header>
-        <h2>Welcome to </h2>
-        <h1>Yunha (Daniel) Jang's Github!</h1>
-      </header>
-      <hr>
-      <h2>
-          Projects
-      </h2>
-      <h3>Enterprise JAVA</h3>
-      <h4>
-        <a href="https://github.com/yunha0221/Student-Registration-System">Student Registration System</a>
-      </h4>
-      <h3>AngularJS</h3>
-      <h4>
-        <a href="https://github.com/yunha0221/Energy-Cost-Calculator">Energy Cost Calculator</a>
-      </h4>
-      <h3>Javascript</h3>
-      <h4>
-        <a href="https://github.com/yunha0221/pizza-order-system">Pizza Order System</a>
-      </h4>
+<body ng-app="myApp" ng-cloak>
+
+    <div ng-cloak class="container">
+        
+        <header>
+            <h2>Welcome to </h2>
+            <h1>Yunha (Daniel) Jang's Github!</h1>
+        </header>
+        <hr>
+
+        <md-content class="md-padding" layout-xs="column" layout="row">
+            <div flex-xs flex-gt-xs="50" layout="column">
+
+                <md-card>
+                    <md-card-header>
+                      <md-card-avatar>
+                        <img src="ng-logo.svg"/>
+                      </md-card-avatar>
+                      <md-card-header-text>
+                        <span class="md-title">AngularJS</span>
+                        <span class="md-subhead">project</span>
+                      </md-card-header-text>
+                    </md-card-header>
+                    <md-card-title>
+                      <md-card-title-text>
+                        <span class="md-headline"><a href="https://github.com/yunha0221/Energy-Cost-Calculator">Energy Cost Calculator</a></span>
+                      </md-card-title-text>
+                    </md-card-title>
+                    <md-card-content>
+                      <img src="https://raw.githubusercontent.com/yunha0221/Energy-Cost-Calculator/master/assets/images/calc_big.png" class="md-card-image" alt="Washed Out">
+                    </md-card-content>
+                </md-card>
+
+                <md-card>
+                    <md-card-header>
+                      <md-card-avatar>
+                        <img src="js-logo.svg"/>
+                      </md-card-avatar>
+                      <md-card-header-text>
+                        <span class="md-title">JavaScript</span>
+                        <span class="md-subhead">project</span>
+                      </md-card-header-text>
+                    </md-card-header>
+                    <md-card-title>
+                      <md-card-title-text>
+                        <span class="md-headline"><a href="https://github.com/yunha0221/pizza-order-system">Pizza Order System</a></span>
+                      </md-card-title-text>
+                    </md-card-title>
+                    <md-card-content>
+                      <img src="https://raw.githubusercontent.com/yunha0221/pizza-order-system/master/screenshot.png" class="md-card-image" alt="Washed Out">
+                    </md-card-content>
+                </md-card>
+            </div>
+
+            <div flex-xs flex-gt-xs="50" layout="column">
+                <md-card>
+                    <md-card-header>
+                      <md-card-avatar>
+                        <img src="javaee-logo.png"/>
+                      </md-card-avatar>
+                      <md-card-header-text>
+                        <span class="md-title">Enterprise JAVA</span>
+                        <span class="md-subhead">project</span>
+                      </md-card-header-text>
+                    </md-card-header>
+                    <md-card-title>
+                      <md-card-title-text>
+                        <span class="md-headline"><a href="https://github.com/yunha0221/Student-Registration-System">Student Registration System</a></span>
+                      </md-card-title-text>
+                    </md-card-title>
+                    <md-card-content>
+                        <img src="https://raw.githubusercontent.com/yunha0221/Student-Registration-System/master/screenshots/s1.png" class="md-card-image" alt="Washed Out">
+                    </md-card-content>
+                </md-card>
+            </div>
+        </md-content>
     </div>
-  </body>
+</body>
 </html>
