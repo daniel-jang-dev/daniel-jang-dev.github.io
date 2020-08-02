@@ -1,4 +1,4 @@
-# yunha0221.github.io
+# daniel-jang-dev.github.io
 ===========================
 
 
@@ -10,8 +10,8 @@ My Github user page is at:
 https://github.com/daniel-jang-dev
 
 My Github Pages repo can be found at:  
-https://github.com/daniel-jang-dev/yunha0221.github.io/
+https://github.com/daniel-jang-dev/daniel-jang-dev.github.io/
 
 And, soon, you can see my customized homepage at:
 
-http://yunha0221.github.io/
+http://daniel-jang-dev.github.io/
